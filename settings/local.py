@@ -38,7 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # After the default packages
-    'graphene_django'
+    'graphene_django',
+    'links',
+
 ]
 
 MIDDLEWARE = [
@@ -124,3 +126,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+GRAPHENE = {
+    'SCHEMA': 'hackernews.schema.schema',
+}
